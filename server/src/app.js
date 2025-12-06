@@ -22,4 +22,4 @@ app.get('/', (req, res) => {
   res.send('Smart Event Booking System Backend Running');
 });
 
-module.exports = app;
+module.exports = app;  
