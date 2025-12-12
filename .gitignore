@@ -1,0 +1,81 @@
+# -------------------------------
+# Node.js dependencies
+# -------------------------------
+node_modules/
+**/node_modules/
+
+npm-debug.log
+yarn-debug.log
+yarn-error.log
+
+package-lock.json
+yarn.lock
+
+# -------------------------------
+# Environment Variables
+# -------------------------------
+.env
+.env.local
+.env.*.local
+**/.env
+**/.env.local
+**/.env.*.local
+
+# -------------------------------
+# Build / Production folders
+# -------------------------------
+build/
+dist/
+out/
+**/build/
+**/dist/
+**/out/
+
+# -------------------------------
+# Logs
+# -------------------------------
+logs/
+*.log
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# -------------------------------
+# Coverage & Test
+# -------------------------------
+coverage/
+*.lcov
+**/coverage/
+
+# -------------------------------
+# Temporary files
+# -------------------------------
+tmp/
+temp/
+*.tmp
+*.swp
+
+# -------------------------------
+# IDE / Editor files
+# -------------------------------
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# -------------------------------
+# OS generated files
+# -------------------------------
+.DS_Store
+Thumbs.db
+
+# -------------------------------
+# Misc
+# -------------------------------
+.pnp
+.pnp.js
+*.sublime-workspace
+*.sublime-project
