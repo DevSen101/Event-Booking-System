@@ -1,4 +1,4 @@
-name: EBS Backend CI
+name: Node.js CI
 
 on:
   push:
@@ -10,20 +10,22 @@ jobs:
   test:
     runs-on: ubuntu-latest
 
+    defaults:
+      run:
+        working-directory: ./server
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Setup Node.js
+      - name: Use Node.js 20
         uses: actions/setup-node@v4
         with:
           node-version: 20
           cache: "npm"
 
       - name: Install dependencies
-        working-directory: ./server
-        run: npm install
+        run: npm ci
 
       - name: Run tests
-        working-directory: ./server
         run: npm test
